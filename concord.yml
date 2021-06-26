@@ -16,6 +16,6 @@ flows:
       inventory:
         local:
           hosts:
-            - "192.168.1.68"
+            - "172.16.144.139"
       extraVars:
         greetings: "Hi there!"
