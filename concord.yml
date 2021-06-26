@@ -6,12 +6,16 @@ flows:
   default:
   - task: ansible
     in:
+      auth:
+        privateKey:
+          user: "root"
+          secret:
+            org: "Default"
+            name: "ConcordSecret"
       playbook: playbook/hello.yml
       inventory:
         local:
           hosts:
-            - "127.0.0.1"
-          vars:
-            ansible_connection: "local"
+            - "192.168.1.68"
       extraVars:
         greetings: "Hi there!"
