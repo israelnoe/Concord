@@ -2,5 +2,5 @@
 - hosts: local
   tasks:
   - debug:
-    msg: "{{ greetings }}"
-    verbosity: 0 
+      msg: "{{ greetings }}"
+      verbosity: 0
